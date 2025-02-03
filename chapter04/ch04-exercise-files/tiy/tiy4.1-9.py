@@ -6,7 +6,7 @@ for pizza in pizzas:
 
 print("I really like pizza!")
 
-print("4.2")
+print("\n4.2")
 
 animals = ['cow', 'pig', 'chicken']
 for food  in animals:
@@ -15,19 +15,38 @@ for food  in animals:
 print("All these animals are cute and delicious! Nomnomnom")
 print("I already did this one before realizing you didn't have it on the list for us to do!")
 
-print("4.3")
+print("\n4.3")
 
 numbers = list(range(1, 21))
 print(numbers)
 
-print("4.5")
+print("\n4.5")
 
+million = list(range(1, 1000001))
+print(min(million))
+print(max(million))
+print(sum(million))
 
+print("\n4.6")
 
+odd_numbers = list(range(1, 21, 2))
+for odd in odd_numbers:
+  print(odd)
 
+print("\n4.7")
 
-print("4.6")
-print("4.7")
-print("4.8")
-print("4.9")
+threes = list(range(3, 31, 3))
+for number in threes:
+  print(number)
 
+print("\n4.8")
+
+cubes = []
+for value in range(1, 11):
+  cube = value**3
+  print(cube)
+
+print("\n4.9")
+
+cubes = [value**3 for value in range(1, 11)]
+print(cubes)
