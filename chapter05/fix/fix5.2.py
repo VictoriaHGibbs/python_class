@@ -6,7 +6,7 @@
 members = ['Nathanial', 'Walter', 'Erin', 'jean']
 
 for member in members:
-    if member = 'Walter':
+    if member == 'Walter':
         print("Hello admin, would you like to see a status report?")
     else:
         print(f"Welcome {member}.")

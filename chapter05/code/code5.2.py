@@ -21,7 +21,19 @@ smoky_peaks = [
     "Old Black"
 ]
 
+smoky_peaks_lc = [smoky_peak.lower() for smoky_peak in smoky_peaks]
+
 # Get user input for a mountain peak
-user_peak = 
+
+# user_peak = 'Grandfather Mountain'
+user_peak = 'grandfather Mountain'
+
+# user_peak = 'Clingmans Dome'
+# user_peak = 'clingmans Dome'
+
 
 # Create your if...else statement here
+if user_peak.lower() in smoky_peaks_lc:
+    print(f"{user_peak.title()} is one of the 7 highest mountain peaks in the Smoky Mountain National Park!")
+else:
+    print(f"{user_peak.title()} is not in the list of the 7 highest mountain peaks.")

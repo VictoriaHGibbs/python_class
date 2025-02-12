@@ -12,8 +12,8 @@ error_3 = 'Fatal'
 
 if(error_levels[0] == error_1):
     print(f"Error level: {error_levels[0]}")
-if(error_levels[1] == error_2):
+elif(error_levels[1] == error_2):
     print(f"Error level: {error_levels[1]}")
-if(error_levels[2] == error_3):
+elif(error_levels[2] == error_3):
     print(f"Error level: {error_levels[2]}")
     

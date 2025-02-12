@@ -34,7 +34,8 @@ additional_peaks = [
 
 # Check for matches between the two lists and print the result
 print("Matching Peaks (7 Highest Peaks in Smoky Mountains):")
-
-print(f"{peak} is one of the 7 highest peaks in the Smoky Mountains.")
-
-print(f"{peak} is not in the list of the 7 highest peaks.")
+for peak in additional_peaks:
+    if peak in highest_peaks:
+        print(f"{peak} is one of the 7 highest peaks in the Smoky Mountains.")
+    else:
+        print(f"{peak} is not in the list of the 7 highest peaks.")

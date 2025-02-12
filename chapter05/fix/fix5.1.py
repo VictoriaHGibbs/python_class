@@ -7,5 +7,5 @@
 age = 21
 if age >= 21:
     print ("You may enter the club!")
-else age > 21
+else:
     print ("You are not of age yet.")
