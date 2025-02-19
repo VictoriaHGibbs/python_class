@@ -22,6 +22,9 @@ smoky_mountains_peaks = {
 
 
 # Your code here
-
+print("Peaks greater than 6370 feet in elevation:")
+for name, height in smoky_mountains_peaks.items():
+    if height > 6370:
+        print(f"{name}: {height} feet")
 
 

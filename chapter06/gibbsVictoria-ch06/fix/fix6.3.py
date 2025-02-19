@@ -15,5 +15,5 @@ smoky_mountains_peaks = {
     'Mount Kephart': 6217
 }
 
-for peak, height in smoky_mountains_peaks:
+for peak, height in smoky_mountains_peaks.items():
     print (f"{peak}:{height}")

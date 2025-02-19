@@ -18,4 +18,9 @@ smoky_mountains_peaks = {
 }
 
 # Add print statements here
+peaks = ['Clingmans Dome', 'Mount Le Conte']
 
+for mountain in smoky_mountains_peaks.keys():
+    if mountain in peaks:
+        print(f"The height of {mountain.title()} is \
+{smoky_mountains_peaks[mountain]} feet.")

@@ -16,4 +16,4 @@ smoky_mountains_peaks = {
     'Mount Kephart': 6217
 }
 
-print(f"The height of Mount Buckly is {smoky_mountains_peaks[3]} feet")
+print(f"The height of Mount Buckly is {smoky_mountains_peaks['Mount Buckley']} feet")
