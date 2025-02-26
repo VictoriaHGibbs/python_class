@@ -37,19 +37,21 @@
 # Begin code here
 #
 # Initialize an empty dictionary to store band member information
-
-
+members = {}
+active = True
 # Start a loop to continuously ask for user input
-
+while active:
     # Ask for the band member's first name
-
-    
-    # Check if the user wants to end the input process
-    
+    name = input("\nWhat is the name of a bank member? ")
     # Ask for the instrument the band member plays
-
-    
+    instrument = input("\nWhat instrument do you play? ")
     # Store the information in the dictionary
-
+    members[name] = instrument
+    # Check if the user wants to end the input process
+    response = input("\nDo you have more to enter? yes/ no \n ")
+    if response == 'no':
+        active = False
 
 # Print the collected information in sentence format
+for name, instrument in members.items():
+    print(f"{name.title()} play the {instrument}.")

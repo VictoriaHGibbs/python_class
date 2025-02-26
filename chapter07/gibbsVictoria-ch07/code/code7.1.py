@@ -25,16 +25,21 @@
 # Beginning of program
 #
 # Initialize an empty list to store musical instruments
-
-
+instruments = []
+prompt = "\nWhat is the name of a musical instrument?"
 # Use a while loop to continuously ask for user input
-
+while True:
     # Ask the user to input the name of a musical instrument
-    
-    
+    instrument = input(prompt)
+    instruments.append(instrument)
     # Check if the user wants to stop the input process
-    
+    response = input("Would you like to stop? yes/no\n")
+    if response == 'yes':
+        break
     # Add the inputted instrument to the list
     
 
 # Print the list of musical instruments after the loop ends
+print("Here's the list of instruments:\n")
+for instrument in instruments:
+    print(instrument)

@@ -5,12 +5,11 @@
 # running. What can you do to fix the code so the program will quit?
 
 
-prompt = "\nEnter the name of your favorite band and I will display it back to you"
+prompt = "\nEnter the name of your favorite band and I will display it back to you "
 prompt += "Enter 'quit' to end the program"
 active = True
 while active:
     message = input(prompt)
-
     if message == 'quit':
         active = False
     else:

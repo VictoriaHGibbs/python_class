@@ -9,7 +9,8 @@
 
 print("You must be at least 48 inches tall to ride the Cyclone rollercoaster")
 height = input("How tall are you?")
-if height <= 48:
+height = int(height)
+if height >= 48:
     print("You are tall enought to ride the Cyclone - Enjoy!")
 else:
     print("You are not tall enough to ride the Cyclone. Come back next year!")
