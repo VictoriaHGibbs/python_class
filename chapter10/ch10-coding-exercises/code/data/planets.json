@@ -1,0 +1,40 @@
+{
+  "planets": [
+    {
+      "name": "Mercury",
+      "fuel_required": 50
+    },
+    {
+      "name": "Venus",
+      "fuel_required": 30
+    },
+    {
+      "name": "Earth",
+      "fuel_required": 0
+    },
+    {
+      "name": "Mars",
+      "fuel_required": 70
+    },
+    {
+      "name": "Jupiter",
+      "fuel_required": 200
+    },
+    {
+      "name": "Saturn",
+      "fuel_required": 300
+    },
+    {
+      "name": "Uranus",
+      "fuel_required": 400
+    },
+    {
+      "name": "Neptune",
+      "fuel_required": 500
+    },
+    {
+      "name": "Moon",
+      "fuel_required": 10
+    }
+  ]
+}
