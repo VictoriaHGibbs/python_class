@@ -16,7 +16,7 @@ class Dog:
         self.name = name
         self.age = age
 
-    def sit():
+    def sit(self):
         """Simulate a dog sitting in response to a command."""
         print(f"{self.name} is now sitting.")
 
@@ -25,8 +25,8 @@ class Dog:
         print(f"{self.name} rolled over!")
 
 
-my_dog = Dog()
-your_dog = Dog()
+my_dog = Dog('Bob', 8)
+your_dog = Dog('Jerry', 4)
 
 print(f"My dog's name is {my_dog.name}.")
 print(f"My dog is {my_dog.age} years old.")

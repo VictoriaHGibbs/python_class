@@ -5,6 +5,9 @@
 #   code. 
 #   
 #   Next, there are three items that are incorrect in the code. 
+#       added year to ElectricCar class
+#       calling on Car class instead of Battery
+#       added self to get_range()
 #
 #   Run the program and use the error messages as your guide to get the
 #   program running correctly.
@@ -51,7 +54,7 @@ class Battery:
         """Print a statement describing the battery size."""
         print(f"This car has a {self.battery_size}-kWh battery.")
 
-    def get_range():
+    def get_range(self):
         """Print a statement about the range this battery provides."""
         if self.battery_size == 40:
             range = 150
@@ -61,10 +64,10 @@ class Battery:
         print(f"This car can go about {range} miles on a full charge.")
 
 
-class ElectricCar(Battery):
+class ElectricCar(Car):
     """Represent aspects of a car, specific to electric vehicles."""
 
-    def __init__(self, make, model):
+    def __init__(self, make, model, year):
         """
         Initialize attributes of the parent class.
         Then initialize attributes specific to an electric car.

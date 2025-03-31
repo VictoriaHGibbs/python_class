@@ -11,10 +11,10 @@ class Car:
 
     def __init__(self, make, model, year):
         """Initialize attributes to describe a car."""
-        make = make
-        model = model
-        year = year
-        odometer_reading = 0
+        self.make = make
+        self.model = model
+        self.year = year
+        self.odometer_reading = 0
 
     def get_descriptive_name(self):
         """Return a neatly formatted descriptive name."""

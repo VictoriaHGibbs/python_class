@@ -15,8 +15,8 @@
 #
 #   Instantiate Planet Objects: 
 #   Create objects for the following four planets with their actual names and 
-#   appoximate distances from the sun. 
-#   Keep in mind which elements are strings and which are numbers. Remeber that
+#   approximate distances from the sun. 
+#   Keep in mind which elements are strings and which are numbers. Remember that
 #   strings require quotes and numbers do not.
 #
 #   earth:      Approximately 149.6 million kilometers from the Sun.
@@ -48,18 +48,28 @@
 
 class Planet:
     def __init__(self, name, distance_from_sun):
-        # Your code here
+        self.name = name
+        self.distance_from_sun = distance_from_sun
     
     def __str__(self):
-        # Your code here
+        return (f"Name: {self.name}, Distance from Sun: {self.distance_from_sun} million km \n"
+        f"Orbital Period ({self.name} years, rounded): {Planet.orbital_period(self)}")
 
- def orbital_period(self):
+    def orbital_period(self):
         # Calculate and round the orbital period to the nearest integer
         return round((self.distance_from_sun ** 1.5))
 
 # Example planet objects
 earth = Planet("Earth", 149.6)
-# Your code here
+mars = Planet("Mars", 277.9)
+venus = Planet("Venus", 108.2)
+mercury = Planet("Mercury", 57.9)
 
 # Displaying each planet's information and its rounded orbital period
-# Your code here
+print(earth)
+print("")
+print(mars)
+print("")
+print(venus)
+print("")
+print(mercury)

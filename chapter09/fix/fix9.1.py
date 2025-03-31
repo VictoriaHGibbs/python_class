@@ -1,7 +1,7 @@
 #   fix9.1.py - Dog
 #
-#   The __init__() method, also called a constructor is the defualt method that
-#   is called when you first instanciate an a class. When you run this code,
+#   The __init__() method, also called a constructor is the default method that
+#   is called when you first instantiate an a class. When you run this code,
 #   Python throws an error. 
 #
 # What can you do to fix the problems?
@@ -9,7 +9,7 @@
 class Dog:
     """A simple attempt to model a dog."""
 
-    def _init_(self, name, age):
+    def __init__(self, name, age):
         """Initialize name and age attributes."""
         self.name = name
         self.age = age
