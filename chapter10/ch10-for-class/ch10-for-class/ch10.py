@@ -78,7 +78,7 @@ print(len(pi_string))
 
 # Is Your Birthday Contained in Pi?
 
-# use pi_brithdaty file in ch10 folder
+# use pi_birthday file in ch10 folder
 
 # writing to a file
 

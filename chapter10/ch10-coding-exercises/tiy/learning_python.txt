@@ -1,0 +1,6 @@
+In Python you can use variables. 
+In Python you can write code that looks like half your syntax is missing.
+In Python you can create lists which are collections of data. 
+In Python you can create libraries which are just arrays in a trench coat. 
+In Python you can create classes which are the same as classes in other languages.
+In Python you can work with text files. 

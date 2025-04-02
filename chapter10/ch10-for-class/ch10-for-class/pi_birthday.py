@@ -1,8 +1,19 @@
-from pathlib import Path
+import os
 
+# Get the directory where the current script is located
+script_dir = os.path.dirname(os.path.abspath(__file__))
 
-path = Path('pi_million_digits.txt')
-contents = path.read_text()
+# Create the full path to the text file
+file_path = os.path.join(script_dir, "pi_million_digits.txt")
+
+# Open the file
+with open(file_path, "r") as file:
+    contents = file.read()
+
+# from pathlib import Path
+
+# path = Path('pi_million_digits.txt')
+# contents = file_path.read_text()
 
 lines = contents.splitlines()
 pi_string = ''
