@@ -20,16 +20,17 @@ from pathlib import Path
 import json
 
 # Define the path to the JSON file
-
+path = Path('chapter10/ch10-coding-exercises/code/data/planets.json')
 
 # Read the content of the file using read_text
-
+contents = path.read_text()
 
 # Parse the JSON data from the file content
-
+planets_data = json.loads(contents)
 
 # Iterate through the list of planets in the JSON data
+for planet in planets_data['planets']:
 
     # Print the sentence for each planet
-
+    print(f"The planet {planet['name']} has {planet['fuel_required']} fuel available. \n")
 

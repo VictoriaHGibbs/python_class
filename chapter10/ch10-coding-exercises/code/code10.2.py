@@ -25,17 +25,23 @@ import json
 
 
 # Define the path to the JSON file
-file_path = Path('planets.json')
 
 # Read the content of the file using read_text
 # Use the try, except else clause to test if Python can find the file
 # Your code here
+def planet_info():
+    path = Path('chapter10/ch10-coding-exercises/code/data/planets.json')
+    try:
+        contents = path.read_text()
+    except FileNotFoundError:
+        print(f"Sorry, the file {path} does not exist.")
+        pass
+    else:
+        # Parse the JSON data from the file content
+        planets_data = json.loads(contents)
+        # Iterate through the list of planets in the JSON data
+        for planet in planets_data['planets']:
+        # Print the sentence for each planet
+            print(f"The planet {planet['name']} has fuel {planet['fuel_required']} available.")
 
-    # Parse the JSON data from the file content
-    planets_data = json.loads(file_content)
-
-    # Iterate through the list of planets in the JSON data
-    for planet in planets_data['planets']:
-    # Print the sentence for each planet
-        print(f"The planet {planet['name']} has fuel available.")
-
+planet_info()
