@@ -1,0 +1,51 @@
+@startuml
+class AlienInvasion {
+    run_game()
+    _check_events()
+    _check_keydown_events()
+    _check_keyup_events()
+    _fire_bullet()
+    _update_bullets()
+    _update_screen()
+        clock
+    settings
+    screen
+    ship
+    bullets
+    __init__()
+}
+class Bullet {
+    update()
+    draw_bullet()
+        screen
+    settings
+    color
+    rect
+    y
+    __init__()
+}
+class Settings {
+        screen_width
+    screen_height
+    ship_speed
+    bullet_speed
+    bullet_width
+    bullet_height
+    bullets_allowed
+    __init__()
+}
+class Ship {
+    update()
+    blitme()
+        screen
+    settings
+    screen_rect
+    image
+    rect
+    x
+    moving_right
+    moving_left
+    __init__()
+}
+Sprite <|-- Bullet
+@enduml
